@@ -1,0 +1,54 @@
+services:
+  db:
+    image: postgres:16
+    container_name: yansu-db
+    restart: unless-stopped
+    env_file: backend/.env
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - yansu-network
+
+  fastapi:
+    # Renomeado de 'backend' para 'fastapi' para alinhar com o proxy.conf.json
+    build: ./backend
+    container_name: yansu-backend
+    restart: unless-stopped
+    depends_on:
+      - db
+    env_file: backend/.env
+    ports:
+      - "8000:8000" # Expor porta para acesso direto/debug se necessário
+    volumes:
+      - ./data:/data
+    networks:
+      - yansu-network
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  frontend:
+    build: ./frontend
+    container_name: yansu-frontend
+    restart: unless-stopped
+    depends_on:
+      - fastapi
+    ports:
+      - "4200:80"
+    networks:
+      - yansu-network
+
+networks:
+  yansu-network:
+    driver: bridge
+
+volumes:
+  pgdata:
