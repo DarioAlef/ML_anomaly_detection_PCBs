@@ -1,0 +1,333 @@
+[
+    {
+        "model": "Cfa",
+        "results": {
+            "test_image_AUROC": 0.9761029481887817,
+            "test_image_F1Score": 0.89552241563797,
+            "test_pixel_AUROC": 0.9730129241943359,
+            "test_pixel_F1Score": 0.6375284194946289
+        }
+    },
+    {
+        "model": "Cfa",
+        "results": {
+            "test_image_AUROC": 0.9770220518112183,
+            "test_image_F1Score": 0.8852459192276001,
+            "test_pixel_AUROC": 0.9715221524238586,
+            "test_pixel_F1Score": 0.6326544284820557
+        }
+    },
+    {
+        "model": "Cfa",
+        "results": {
+            "test_image_AUROC": 0.9779411554336548,
+            "test_image_F1Score": 0.90625,
+            "test_pixel_AUROC": 0.9732443690299988,
+            "test_pixel_F1Score": 0.6377332806587219
+        }
+    },
+    {
+        "model": "Cfa",
+        "results": {
+            "test_image_AUROC": 0.9825367331504822,
+            "test_image_F1Score": 0.89552241563797,
+            "test_pixel_AUROC": 0.9734850525856018,
+            "test_pixel_F1Score": 0.6426100134849548
+        }
+    },
+    {
+        "model": "Cfa",
+        "results": {
+            "test_image_AUROC": 0.9742648005485535,
+            "test_image_F1Score": 0.8999999761581421,
+            "test_pixel_AUROC": 0.9734936356544495,
+            "test_pixel_F1Score": 0.6319065093994141
+        }
+    },
+    {
+        "model": "Cflow",
+        "results": {
+            "test_image_AUROC": 0.7895220518112183,
+            "test_image_F1Score": 0.6557376980781555,
+            "test_pixel_AUROC": 0.8101915717124939,
+            "test_pixel_F1Score": 0.3295219838619232
+        }
+    },
+    {
+        "model": "Cflow",
+        "results": {
+            "test_image_AUROC": 0.8570771813392639,
+            "test_image_F1Score": 0.7045454382896423,
+            "test_pixel_AUROC": 0.8330830931663513,
+            "test_pixel_F1Score": 0.30337464809417725
+        }
+    },
+    {
+        "model": "Cflow",
+        "results": {
+            "test_image_AUROC": 0.8244484663009644,
+            "test_image_F1Score": 0.7428571581840515,
+            "test_pixel_AUROC": 0.7933506369590759,
+            "test_pixel_F1Score": 0.29456228017807007
+        }
+    },
+    {
+        "model": "Cflow",
+        "results": {
+            "test_image_AUROC": 0.71875,
+            "test_image_F1Score": 0.6666666865348816,
+            "test_pixel_AUROC": 0.8210282325744629,
+            "test_pixel_F1Score": 0.3985404372215271
+        }
+    },
+    {
+        "model": "Cflow",
+        "results": {
+            "test_image_AUROC": 0.8511029481887817,
+            "test_image_F1Score": 0.7654321193695068,
+            "test_pixel_AUROC": 0.8153771162033081,
+            "test_pixel_F1Score": 0.3697874844074249
+        }
+    },
+    {
+        "model": "Dfm",
+        "results": {
+            "test_image_AUROC": 0.976102888584137,
+            "test_image_F1Score": 0.6666666865348816,
+            "test_pixel_AUROC": 0.9796722531318665,
+            "test_pixel_F1Score": 0.6036989688873291
+        }
+    },
+    {
+        "model": "Dfm",
+        "results": {
+            "test_image_AUROC": 0.9770220518112183,
+            "test_image_F1Score": 0.9354838728904724,
+            "test_pixel_AUROC": 0.9795346856117249,
+            "test_pixel_F1Score": 0.6014145016670227
+        }
+    },
+    {
+        "model": "Dfm",
+        "results": {
+            "test_image_AUROC": 0.9715073108673096,
+            "test_image_F1Score": 0.7450980544090271,
+            "test_pixel_AUROC": 0.9790300726890564,
+            "test_pixel_F1Score": 0.594571053981781
+        }
+    },
+    {
+        "model": "Dfm",
+        "results": {
+            "test_image_AUROC": 0.9724264144897461,
+            "test_image_F1Score": 0.7450980544090271,
+            "test_pixel_AUROC": 0.979405403137207,
+            "test_pixel_F1Score": 0.5828060507774353
+        }
+    },
+    {
+        "model": "Dfm",
+        "results": {
+            "test_image_AUROC": 0.9770220518112183,
+            "test_image_F1Score": 0.7450980544090271,
+            "test_pixel_AUROC": 0.9791805148124695,
+            "test_pixel_F1Score": 0.5968511700630188
+        }
+    },
+    {
+        "model": "Dinomaly",
+        "results": {
+            "test_image_AUROC": 1.0,
+            "test_image_F1Score": 0.9841269850730896,
+            "test_pixel_AUROC": 0.9457442760467529,
+            "test_pixel_F1Score": 0.535859227180481
+        }
+    },
+    {
+        "model": "Dinomaly",
+        "results": {
+            "test_image_AUROC": 1.0,
+            "test_image_F1Score": 0.9677419066429138,
+            "test_pixel_AUROC": 0.9482628107070923,
+            "test_pixel_F1Score": 0.5554866790771484
+        }
+    },
+    {
+        "model": "Dsr",
+        "results": {
+            "test_image_AUROC": 0.44577205181121826,
+            "test_image_F1Score": 0.5813953280448914,
+            "test_pixel_AUROC": 0.49442341923713684,
+            "test_pixel_F1Score": 0.09950107336044312
+        }
+    },
+    {
+        "model": "Dsr",
+        "results": {
+            "test_image_AUROC": 0.4154411554336548,
+            "test_image_F1Score": 0.6105263233184814,
+            "test_pixel_AUROC": 0.42312270402908325,
+            "test_pixel_F1Score": 0.09918440133333206
+        }
+    },
+    {
+        "model": "Dsr",
+        "results": {
+            "test_image_AUROC": 0.39430147409439087,
+            "test_image_F1Score": 0.6105263233184814,
+            "test_pixel_AUROC": 0.5153769254684448,
+            "test_pixel_F1Score": 0.10123071819543839
+        }
+    },
+    {
+        "model": "Dsr",
+        "results": {
+            "test_image_AUROC": 0.32306987047195435,
+            "test_image_F1Score": 0.5333333611488342,
+            "test_pixel_AUROC": 0.5416975617408752,
+            "test_pixel_F1Score": 0.10596687346696854
+        }
+    },
+    {
+        "model": "Fre",
+        "results": {
+            "test_image_AUROC": 0.9678307771682739,
+            "test_image_F1Score": 0.90625,
+            "test_pixel_AUROC": 0.9871026873588562,
+            "test_pixel_F1Score": 0.6765375733375549
+        }
+    },
+    {
+        "model": "Fre",
+        "results": {
+            "test_image_AUROC": 0.9687500596046448,
+            "test_image_F1Score": 0.7692307829856873,
+            "test_pixel_AUROC": 0.9878674149513245,
+            "test_pixel_F1Score": 0.6973388195037842
+        }
+    },
+    {
+        "model": "Fre",
+        "results": {
+            "test_image_AUROC": 0.9540441036224365,
+            "test_image_F1Score": 0.7200000286102295,
+            "test_pixel_AUROC": 0.987319827079773,
+            "test_pixel_F1Score": 0.6738666296005249
+        }
+    },
+    {
+        "model": "Fre",
+        "results": {
+            "test_image_AUROC": 0.9641544818878174,
+            "test_image_F1Score": 0.7924528121948242,
+            "test_pixel_AUROC": 0.9874066710472107,
+            "test_pixel_F1Score": 0.6676594018936157
+        }
+    },
+    {
+        "model": "Fre",
+        "results": {
+            "test_image_AUROC": 0.9586396217346191,
+            "test_image_F1Score": 0.7777777910232544,
+            "test_pixel_AUROC": 0.987362802028656,
+            "test_pixel_F1Score": 0.689824640750885
+        }
+    },
+    {
+        "model": "Patchcore",
+        "results": {
+            "test_image_AUROC": 0.9963235259056091,
+            "test_image_F1Score": 0.9523809552192688,
+            "test_pixel_AUROC": 0.9742162823677063,
+            "test_pixel_F1Score": 0.609294056892395
+        }
+    },
+    {
+        "model": "Patchcore",
+        "results": {
+            "test_image_AUROC": 0.9981617331504822,
+            "test_image_F1Score": 0.9523809552192688,
+            "test_pixel_AUROC": 0.9736996293067932,
+            "test_pixel_F1Score": 0.6043617725372314
+        }
+    },
+    {
+        "model": "Patchcore",
+        "results": {
+            "test_image_AUROC": 0.9972426891326904,
+            "test_image_F1Score": 0.96875,
+            "test_pixel_AUROC": 0.9729361534118652,
+            "test_pixel_F1Score": 0.5972105264663696
+        }
+    },
+    {
+        "model": "Patchcore",
+        "results": {
+            "test_image_AUROC": 0.9963234663009644,
+            "test_image_F1Score": 0.9523809552192688,
+            "test_pixel_AUROC": 0.9732961058616638,
+            "test_pixel_F1Score": 0.6004262566566467
+        }
+    },
+    {
+        "model": "Patchcore",
+        "results": {
+            "test_image_AUROC": 0.9954044222831726,
+            "test_image_F1Score": 0.9677419066429138,
+            "test_pixel_AUROC": 0.9724535346031189,
+            "test_pixel_F1Score": 0.6004799604415894
+        }
+    },
+    {
+        "model": "Supersimplenet",
+        "results": {
+            "test_image_AUROC": 0.28400737047195435,
+            "test_image_F1Score": 0.6105263233184814,
+            "test_pixel_AUROC": 0.7815999984741211,
+            "test_pixel_F1Score": 0.16395480930805206
+        }
+    },
+    {
+        "model": "Supersimplenet",
+        "results": {
+            "test_image_AUROC": 0.6943933963775635,
+            "test_image_F1Score": 0.6808510422706604,
+            "test_pixel_AUROC": 0.5926264524459839,
+            "test_pixel_F1Score": 0.09994589537382126
+        }
+    },
+    {
+        "model": "Supersimplenet",
+        "results": {
+            "test_image_AUROC": 0.5193014740943909,
+            "test_image_F1Score": 0.3404255211353302,
+            "test_pixel_AUROC": 0.7631948590278625,
+            "test_pixel_F1Score": 0.24033185839653015
+        }
+    },
+    {
+        "model": "Supersimplenet",
+        "results": {
+            "test_image_AUROC": 0.390625,
+            "test_image_F1Score": 0.625,
+            "test_pixel_AUROC": 0.7338815331459045,
+            "test_pixel_F1Score": 0.2216344028711319
+        }
+    },
+    {
+        "model": "Supersimplenet",
+        "results": {
+            "test_image_AUROC": 0.6608455777168274,
+            "test_image_F1Score": 0.6329113841056824,
+            "test_pixel_AUROC": 0.7534741163253784,
+            "test_pixel_F1Score": 0.153323233127594
+        }
+    },
+    {
+        "model": "Ganomaly",
+        "results": {
+            "test_image_AUROC": 0.7224265336990356,
+            "test_image_F1Score": 0.6530612111091614
+        }
+    }
+]

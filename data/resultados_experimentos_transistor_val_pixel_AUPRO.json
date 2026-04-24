@@ -1,0 +1,202 @@
+[
+    {
+        "test_image_AUROC": 0.9779411554336548,
+        "test_image_F1Score": 0.9090909361839294,
+        "test_pixel_AUROC": 0.9738052487373352,
+        "test_pixel_F1Score": 0.6388632655143738,
+        "test_pixel_AUPRO": 0.9335510730743408,
+        "model": "Cfa"
+    },
+    {
+        "test_image_AUROC": 0.9797794222831726,
+        "test_image_F1Score": 0.89552241563797,
+        "test_pixel_AUROC": 0.9736323356628418,
+        "test_pixel_F1Score": 0.6384221911430359,
+        "test_pixel_AUPRO": 0.9366576075553894,
+        "model": "Cfa"
+    },
+    {
+        "test_image_AUROC": 0.9788602590560913,
+        "test_image_F1Score": 0.9090909361839294,
+        "test_pixel_AUROC": 0.9740358591079712,
+        "test_pixel_F1Score": 0.6414867639541626,
+        "test_pixel_AUPRO": 0.9355642199516296,
+        "model": "Cfa"
+    },
+    {
+        "test_image_AUROC": 0.9779411554336548,
+        "test_image_F1Score": 0.9354838728904724,
+        "test_pixel_AUROC": 0.9729213118553162,
+        "test_pixel_F1Score": 0.6369834542274475,
+        "test_pixel_AUPRO": 0.9337239265441895,
+        "model": "Cfa"
+    },
+    {
+        "test_image_AUROC": 0.9806985259056091,
+        "test_image_F1Score": 0.90625,
+        "test_pixel_AUROC": 0.9739874601364136,
+        "test_pixel_F1Score": 0.6441072225570679,
+        "test_pixel_AUPRO": 0.9371449947357178,
+        "model": "Cfa"
+    },
+    {
+        "test_image_AUROC": 0.9751838445663452,
+        "test_image_F1Score": 0.7450980544090271,
+        "test_pixel_AUROC": 0.9799689054489136,
+        "test_pixel_F1Score": 0.6216307878494263,
+        "test_pixel_AUPRO": 0.7811025381088257,
+        "model": "Dfm"
+    },
+    {
+        "test_image_AUROC": 0.9715073108673096,
+        "test_image_F1Score": 0.6666666865348816,
+        "test_pixel_AUROC": 0.9800459146499634,
+        "test_pixel_F1Score": 0.6258355379104614,
+        "test_pixel_AUPRO": 0.7827250361442566,
+        "model": "Dfm"
+    },
+    {
+        "test_image_AUROC": 0.9761029481887817,
+        "test_image_F1Score": 0.7200000286102295,
+        "test_pixel_AUROC": 0.9796677827835083,
+        "test_pixel_F1Score": 0.6149784922599792,
+        "test_pixel_AUPRO": 0.7804051041603088,
+        "model": "Dfm"
+    },
+    {
+        "test_image_AUROC": 0.9779411554336548,
+        "test_image_F1Score": 0.7450980544090271,
+        "test_pixel_AUROC": 0.9792776107788086,
+        "test_pixel_F1Score": 0.5954071879386902,
+        "test_pixel_AUPRO": 0.783755898475647,
+        "model": "Dfm"
+    },
+    {
+        "test_image_AUROC": 0.9742646813392639,
+        "test_image_F1Score": 0.89552241563797,
+        "test_pixel_AUROC": 0.9799880981445312,
+        "test_pixel_F1Score": 0.629689633846283,
+        "test_pixel_AUPRO": 0.7805888652801514,
+        "model": "Dfm"
+    },
+    {
+        "test_image_AUROC": 1.0,
+        "test_image_F1Score": 0.9333333373069763,
+        "test_pixel_AUROC": 0.9605771899223328,
+        "test_pixel_F1Score": 0.5800569653511047,
+        "test_pixel_AUPRO": 0.7971122860908508,
+        "model": "Dinomaly"
+    },
+    {
+        "test_image_AUROC": 1.0,
+        "test_image_F1Score": 0.8965517282485962,
+        "test_pixel_AUROC": 0.9617215991020203,
+        "test_pixel_F1Score": 0.5797486305236816,
+        "test_pixel_AUPRO": 0.8018171787261963,
+        "model": "Dinomaly"
+    },
+    {
+        "test_image_AUROC": 1.0,
+        "test_image_F1Score": 0.9333333373069763,
+        "test_pixel_AUROC": 0.9604682922363281,
+        "test_pixel_F1Score": 0.5738382339477539,
+        "test_pixel_AUPRO": 0.7946097254753113,
+        "model": "Dinomaly"
+    },
+    {
+        "test_image_AUROC": 1.0,
+        "test_image_F1Score": 0.9152542352676392,
+        "test_pixel_AUROC": 0.9618039131164551,
+        "test_pixel_F1Score": 0.5796694755554199,
+        "test_pixel_AUPRO": 0.8003793954849243,
+        "model": "Dinomaly"
+    },
+    {
+        "test_image_AUROC": 1.0,
+        "test_image_F1Score": 0.8771929740905762,
+        "test_pixel_AUROC": 0.9601460695266724,
+        "test_pixel_F1Score": 0.5640114545822144,
+        "test_pixel_AUPRO": 0.7950519919395447,
+        "model": "Dinomaly"
+    },
+    {
+        "test_image_AUROC": 0.8363970518112183,
+        "test_image_F1Score": 0.75,
+        "test_pixel_AUROC": 0.8362295031547546,
+        "test_pixel_F1Score": 0.4670763909816742,
+        "test_pixel_AUPRO": 0.419350266456604,
+        "model": "Fre"
+    },
+    {
+        "test_image_AUROC": 0.826286792755127,
+        "test_image_F1Score": 0.7777777910232544,
+        "test_pixel_AUROC": 0.9785161018371582,
+        "test_pixel_F1Score": 0.7108899354934692,
+        "test_pixel_AUPRO": 0.8377960324287415,
+        "model": "Fre"
+    },
+    {
+        "test_image_AUROC": 0.9255514144897461,
+        "test_image_F1Score": 0.7931034564971924,
+        "test_pixel_AUROC": 0.9792141318321228,
+        "test_pixel_F1Score": 0.5887514352798462,
+        "test_pixel_AUPRO": 0.7671074271202087,
+        "model": "Fre"
+    },
+    {
+        "test_image_AUROC": 0.7463235259056091,
+        "test_image_F1Score": 0.47058823704719543,
+        "test_pixel_AUROC": 0.9725663065910339,
+        "test_pixel_F1Score": 0.5419235825538635,
+        "test_pixel_AUPRO": 0.8178519010543823,
+        "model": "Fre"
+    },
+    {
+        "test_image_AUROC": 0.5275735259056091,
+        "test_image_F1Score": 0.5249999761581421,
+        "test_pixel_AUROC": 0.9161882996559143,
+        "test_pixel_F1Score": 0.5175336003303528,
+        "test_pixel_AUPRO": 0.7007171511650085,
+        "model": "Fre"
+    },
+    {
+        "test_image_AUROC": 0.9972426891326904,
+        "test_image_F1Score": 0.9538461565971375,
+        "test_pixel_AUROC": 0.9732894897460938,
+        "test_pixel_F1Score": 0.6004483103752136,
+        "test_pixel_AUPRO": 0.9414757490158081,
+        "model": "Patchcore"
+    },
+    {
+        "test_image_AUROC": 0.9972426295280457,
+        "test_image_F1Score": 0.9523809552192688,
+        "test_pixel_AUROC": 0.9727736711502075,
+        "test_pixel_F1Score": 0.6048810482025146,
+        "test_pixel_AUPRO": 0.9410608410835266,
+        "model": "Patchcore"
+    },
+    {
+        "test_image_AUROC": 0.9963234663009644,
+        "test_image_F1Score": 0.9677419066429138,
+        "test_pixel_AUROC": 0.9734448790550232,
+        "test_pixel_F1Score": 0.6108319759368896,
+        "test_pixel_AUPRO": 0.9429327249526978,
+        "model": "Patchcore"
+    },
+    {
+        "test_image_AUROC": 0.9972425699234009,
+        "test_image_F1Score": 0.9523809552192688,
+        "test_pixel_AUROC": 0.9729492664337158,
+        "test_pixel_F1Score": 0.6041241884231567,
+        "test_pixel_AUPRO": 0.9415339827537537,
+        "model": "Patchcore"
+    },
+    {
+        "test_image_AUROC": 0.9954043626785278,
+        "test_image_F1Score": 0.9523809552192688,
+        "test_pixel_AUROC": 0.9723465442657471,
+        "test_pixel_F1Score": 0.602199375629425,
+        "test_pixel_AUPRO": 0.9411532282829285,
+        "model": "Patchcore"
+    }
+]
