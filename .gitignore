@@ -10,6 +10,7 @@ frontend/node_modules/
 *.vscode/
 *.env
 *.log
+*.ckpt
 
 
 
@@ -62,6 +63,5 @@ Thumbs.db
 # Temporary incremental push control
 .codegraph/
 .claude/
-backend/
 frontend/
 data/
