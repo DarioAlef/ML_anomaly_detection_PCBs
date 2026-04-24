@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: yansu-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-integrai_minimal}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - yansu-network
+
+  fastapi:
+    build: ../backend
+    container_name: yansu-backend
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME:-integrai_minimal}
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD:-postgres}
+    networks:
+      - yansu-network
+
+  frontend:
+    build: .
+    container_name: yansu-frontend
+    restart: unless-stopped
+    depends_on:
+      - fastapi
+    ports:
+      - "4200:80"
+    networks:
+      - yansu-network
+
+networks:
+  yansu-network:
+    driver: bridge
+
+volumes:
+  pgdata:

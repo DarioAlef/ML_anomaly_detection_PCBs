@@ -63,5 +63,4 @@ Thumbs.db
 # Temporary incremental push control
 .codegraph/
 .claude/
-frontend/
 data/

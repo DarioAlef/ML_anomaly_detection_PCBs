@@ -1,0 +1,77 @@
+<div class="about-container">
+  <!-- Hero Section -->
+  <header class="about-hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <lucide-icon [img]="InfoIcon" [size]="14"></lucide-icon>
+        <span>Sobre o Projeto</span>
+      </div>
+      <h1 class="hero-title">Yansu</h1>
+      <p class="hero-subtitle">
+        Inteligência Artificial avançada para inspeção óptica de PCBs no Polo Industrial de Manaus.
+      </p>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-grid"></div>
+      <lucide-icon [img]="CpuIcon" [size]="120" class="hero-icon"></lucide-icon>
+    </div>
+  </header>
+
+  <div class="content-sections">
+    <!-- Intro Section -->
+    <section class="info-card main-intro">
+      <div class="card-glow"></div>
+      <div class="card-content">
+        <h2>Visão Geral</h2>
+        <p>
+          O Yansu é um sistema avançado de <strong>Inspeção Óptica Automatizada (AOI)</strong> focado no controle de qualidade visual de Placas de Circuito Impresso (PCBs) montadas. Desenvolvido para os desafios da Indústria 4.0, o projeto soluciona as limitações dos sistemas tradicionais, que exigem parametrização manual constante e grandes volumes de imagens de defeitos para funcionar.
+        </p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="grid-sections">
+      <div class="info-card">
+        <div class="card-icon-wrapper">
+          <lucide-icon [img]="ZapIcon" [size]="24"></lucide-icon>
+        </div>
+        <div class="card-content">
+          <h3>Como Funciona</h3>
+          <p>
+            Nossa solução é impulsionada por <strong>Aprendizado Profundo Não Supervisionado</strong>. A Inteligência Artificial é treinada exclusivamente com imagens de placas perfeitas (nominais), aprendendo a distribuição exata do padrão ideal de montagem.
+          </p>
+          <p>
+            Durante a inspeção em tempo real, o modelo identifica qualquer desvio visual como uma anomalia, permitindo a detecção precisa de <strong>defeitos inéditos (zero-day defects)</strong> em componentes minúsculos sem nunca tê-los visto antes.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon-wrapper">
+          <lucide-icon [img]="MicroscopeIcon" [size]="24"></lucide-icon>
+        </div>
+        <div class="card-content">
+          <h3>Base Científica</h3>
+          <p>
+            A inteligência por trás do Yansu é validada por pesquisas do <strong>Núcleo de Capacitação em Inteligência Artificial (NCIA)</strong> da FPFtech.
+          </p>
+          <p>
+            O motor de inferência opera com base em um benchmark sistemático dos melhores métodos do estado da arte mundial (como <strong>PatchCore</strong> e <strong>CFA</strong>), garantindo discriminação robusta de falhas e mapas de calor milimétricos, mesmo em cenários complexos de alta densidade como os do Polo Industrial de Manaus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners / Footer Info -->
+    <footer class="about-footer">
+      <div class="footer-tag">
+        <lucide-icon [img]="ShieldIcon" [size]="14"></lucide-icon>
+        <span>Validado por NCIA/FPFtech</span>
+      </div>
+      <div class="footer-tag">
+        <lucide-icon [img]="DatabaseIcon" [size]="14"></lucide-icon>
+        <span>Dataset Local: PIM - Manaus</span>
+      </div>
+    </footer>
+  </div>
+</div>

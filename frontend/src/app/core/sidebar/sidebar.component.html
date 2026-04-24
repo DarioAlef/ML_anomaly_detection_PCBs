@@ -1,0 +1,49 @@
+<aside class="sidebar" [class.collapsed]="collapsed()">
+
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <div class="logo-icon">
+      <lucide-icon [img]="CpuIcon" [size]="20"></lucide-icon>
+    </div>
+    <span class="brand-name">Yansu</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <span class="nav-label">Navegação</span>
+
+    @for (item of navItems; track item.label) {
+      <a
+        class="nav-item"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+      >
+        <span class="nav-icon">
+          <lucide-icon [img]="item.icon" [size]="18"></lucide-icon>
+        </span>
+        <span class="nav-text">{{ item.label }}</span>
+      </a>
+    }
+  </nav>
+
+  <!-- System Status -->
+  <div class="sidebar-footer">
+    <div class="status-body">
+      <div class="status-header">
+        <div class="status-dot-wrapper">
+          <span class="dot-ping"></span>
+          <span class="dot-solid"></span>
+        </div>
+        <span class="status-label">Sistema Operacional</span>
+      </div>
+      <p class="status-version">v2.4.1 — Polo Industrial de Manaus</p>
+    </div>
+
+    <button class="collapse-btn" (click)="toggle()">
+      <lucide-icon
+        [img]="collapsed() ? ChevronRightIcon : ChevronLeftIcon"
+        [size]="16"
+      ></lucide-icon>
+    </button>
+  </div>
+</aside>

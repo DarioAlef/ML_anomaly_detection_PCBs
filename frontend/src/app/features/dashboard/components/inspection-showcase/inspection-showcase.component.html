@@ -1,0 +1,160 @@
+<div class="showcase-card">
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <div class="card-head">
+    <div class="card-head-left">
+      <div class="card-icon">
+        <lucide-icon [img]="BrainIcon" [size]="16"></lucide-icon>
+      </div>
+      <h3 class="card-title">Laboratório de Inspeção Visual</h3>
+    </div>
+
+    <div class="head-right">
+      @if (state() === 'processing') {
+      <span class="status-badge processing">
+        <lucide-icon [img]="LoaderIcon" [size]="12" class="spin-icon"></lucide-icon>
+        Processando...
+      </span>
+      } @else if (state() === 'done') {
+      <span class="status-badge" [class.verdict-ok]="result()?.verdict === 'APROVADO'"
+        [class.verdict-ng]="result()?.verdict === 'REPROVADO'"
+        [class.verdict-invalid]="result()?.verdict === 'IMAGEM_INVALIDA'">
+        {{ result()?.verdict === 'IMAGEM_INVALIDA' ? 'NÃO É PCB' : result()?.verdict }}
+      </span>
+      } @else {
+      <span class="status-badge">Aguardando imagem</span>
+      }
+
+      @if (state() === 'done' || state() === 'error') {
+      <button class="btn-reset" (click)="reset()" title="Nova inspeção">
+        <lucide-icon [img]="ResetIcon" [size]="15"></lucide-icon>
+      </button>
+      }
+    </div>
+  </div>
+
+  <!-- ── Panels ──────────────────────────────────────────── -->
+  <div class="panels" [class.result-visible]="state() === 'done'">
+
+    <!-- LEFT: Drop zone / Original preview -->
+    <div class="panel panel-left">
+      <div class="panel-label">Imagem Original</div>
+
+      <!-- Drop zone (idle / dragging) -->
+      @if (state() === 'idle' || state() === 'dragging') {
+      <div class="drop-zone" [class.dragging]="state() === 'dragging'" (dragenter)="onDragEnter($event)"
+        (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)"
+        (click)="fileInput.click()">
+        <div class="drop-icon">
+          <lucide-icon [img]="UploadIcon" [size]="32"></lucide-icon>
+        </div>
+        <p class="drop-title">Solte a imagem aqui</p>
+        <p class="drop-sub">ou clique para selecionar</p>
+        <p class="drop-hint">PNG, JPG, WebP — máx. {{ MAX_MB }} MB</p>
+        <input #fileInput type="file" accept="image/jpeg,image/png,image/webp,image/bmp" style="display:none"
+          (change)="onFileInputChange($event)" />
+      </div>
+      }
+
+      <!-- Processing state: show original with scan overlay -->
+      @if (state() === 'processing') {
+      <div class="image-frame scanning">
+        <img [src]="previewSrc()" alt="Imagem original" class="frame-img" />
+        <div class="scan-overlay"></div>
+        <div class="scan-bar"></div>
+        <span class="cam-label">Analisando...</span>
+      </div>
+      }
+
+      <!-- Done / Error: show original -->
+      @if (state() === 'done' || state() === 'error') {
+      <div class="image-frame">
+        <img [src]="result()?.original_b64 ? 'data:image/jpeg;base64,' + result()?.original_b64 : previewSrc()"
+          alt="Original" class="frame-img" />
+        <span class="cam-label">Original</span>
+      </div>
+      }
+    </div>
+
+    <!-- RIGHT: Heatmap panel -->
+    <div class="panel panel-right">
+      <div class="panel-label">Mapa de Anomalias</div>
+
+      @if (state() === 'idle' || state() === 'dragging') {
+      <div class="heatmap-placeholder">
+        <lucide-icon [img]="ImageIcon" [size]="32" class="placeholder-icon"></lucide-icon>
+        <p>Aguardando análise</p>
+      </div>
+      }
+
+      @if (state() === 'processing') {
+      <div class="heatmap-placeholder processing">
+        <lucide-icon [img]="LoaderIcon" [size]="28" class="spin-icon"></lucide-icon>
+        <p>Gerando heatmap...</p>
+      </div>
+      }
+
+      @if (state() === 'done' && result()) {
+      <div class="image-frame">
+        <img [src]="'data:image/png;base64,' + result()!.heatmap_b64" alt="Heatmap de anomalia" class="frame-img" />
+        <span class="cam-label heatmap-cam">Heatmap — PatchCore</span>
+      </div>
+      }
+
+      @if (state() === 'error') {
+      <div class="heatmap-placeholder error">
+        <p>{{ errorMsg() }}</p>
+      </div>
+      }
+    </div>
+
+    <!-- RIGHT: Metrics panel -->
+    @if (state() === 'done' && result()) {
+    <div class="panel panel-metrics">
+      <div class="panel-label">Métricas</div>
+      
+      <div class="metrics-container">
+        <div class="metric-item-v">
+          <lucide-icon [img]="BarChartIcon" [size]="14" class="m-icon"></lucide-icon>
+          <div class="m-content">
+            <span class="metric-label">Score de Anomalia</span>
+            <span class="metric-value mono">{{ result()!.anomaly_score.toFixed(4) }}</span>
+          </div>
+        </div>
+        
+        <div class="metric-item-v">
+          <lucide-icon [img]="AlertIcon" [size]="14" class="m-icon"></lucide-icon>
+          <div class="m-content">
+            <span class="metric-label">Veredito</span>
+            <span class="metric-value" [class.ok]="result()!.verdict === 'APROVADO'"
+              [class.ng]="result()!.verdict === 'REPROVADO'"
+              [class.invalid]="result()!.verdict === 'IMAGEM_INVALIDA'">
+              {{ result()!.verdict === 'IMAGEM_INVALIDA' ? 'NÃO É PCB' : result()!.verdict }}
+            </span>
+          </div>
+        </div>
+        
+        <div class="metric-item-v">
+          <div class="m-icon empty-icon"></div>
+          <div class="m-content">
+            <span class="metric-label">Inferência</span>
+            <span class="metric-value mono">{{ result()!.inference_ms.toFixed(0) }} ms</span>
+          </div>
+        </div>
+        
+        <div class="experts-item-v">
+          <div class="avatar-stack">
+            <div class="avatar avatar-muted">
+              <lucide-icon [img]="UserIcon" [size]="12"></lucide-icon>
+            </div>
+            <div class="avatar avatar-ai">
+              <div class="ai-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+</div>

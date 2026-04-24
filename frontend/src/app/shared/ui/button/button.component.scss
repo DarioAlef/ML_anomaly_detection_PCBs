@@ -1,0 +1,26 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+  background-color: #e53535;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+:host:hover {
+  opacity: 0.9;
+}
+
+:host:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
