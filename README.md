@@ -1,7 +1,7 @@
-# Yansu - Anomaly Detector in PCBs
+# Anomaly Detector in PCBs
 
 ## Description
-Yansu is a web application that uses deep learning to detect anomalies in printed circuit boards (PCBs). It uses autoencoders and variational autoencoders to learn the normal patterns of PCBs and detect anomalies in new ones.
+This is a web application that uses deep learning to detect anomalies in printed circuit boards (PCBs). It uses autoencoders and variational autoencoders to learn the normal patterns of PCBs and detect anomalies in new ones.
 
 ## Getting Started
 
@@ -12,17 +12,15 @@ Yansu is a web application that uses deep learning to detect anomalies in printe
 
 ### Installation
 
-1. Clone the repository:
+1. Run the application - Local:
 ```bash
-git clone https://gitlab.fpf.br/ncia/yansu.git
+cd frontend && npm install && npm start
+```
+```bash
+cd backend && uv sync && uv run uvicorn main:app --reload
 ```
 
-2. Navigate to the project directory:
-```bash
-cd yansu
-```
-
-3. Run the application:
+2. Run the application - Docker:
 ```bash
 ./docker compose up -d --build
 ```

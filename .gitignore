@@ -59,7 +59,3 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
-
-# Temporary incremental push control
-.codegraph/
-.claude/
